@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha Daneshmand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.4.0/simple-icons.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-blue': '#00f3ff',
+                        'cyber-pink': '#ff00ff',
+                    },
+                    fontFamily: {
+                        'cyber': ['Orbitron', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+        .cyber-glitch {
+            text-shadow: 
+                0.05em 0 0 rgba(255,0,255,.75),
+                -0.025em -0.05em 0 rgba(0,255,255,.75),
+                0.025em 0.05em 0 rgba(255,255,0,.75);
+            animation: glitch 500ms infinite;
+        }
+        @keyframes glitch {
+            0% {text-shadow: 0.05em 0 0 rgba(255,0,255,.75), -0.05em -0.025em 0 rgba(0,255,255,.75), -0.025em 0.05em 0 rgba(255,255,0,.75);}
+            14% {text-shadow: 0.05em 0 0 rgba(255,0,255,.75), -0.05em -0.025em 0 rgba(0,255,255,.75), -0.025em 0.05em 0 rgba(255,255,0,.75);}
+            15% {text-shadow: -0.05em -0.025em 0 rgba(255,0,255,.75), 0.025em 0.025em 0 rgba(0,255,255,.75), -0.05em -0.05em 0 rgba(255,255,0,.75);}
+            49% {text-shadow: -0.05em -0.025em 0 rgba(255,0,255,.75), 0.025em 0.025em 0 rgba(0,255,255,.75), -0.05em -0.05em 0 rgba(255,255,0,.75);}
+            50% {text-shadow: 0.025em 0.05em 0 rgba(255,0,255,.75), 0.05em 0 0 rgba(0,255,255,.75), 0 -0.05em 0 rgba(255,255,0,.75);}
+            99% {text-shadow: 0.025em 0.05em 0 rgba(255,0,255,.75), 0.05em 0 0 rgba(0,255,255,.75), 0 -0.05em 0 rgba(255,255,0,.75);}
+            100% {text-shadow: -0.025em 0 0 rgba(255,0,255,.75), -0.025em -0.025em 0 rgba(0,255,255,.75), -0.025em -0.05em 0 rgba(255,255,0,.75);}
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-300 font-cyber">
+    <nav class="fixed w-full bg-black bg-opacity-80 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-cyber-blue">Taha Daneshmand</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="hover:text-cyber-pink transition">Home</a>
+                    <a href="#skills" class="hover:text-cyber-pink transition">Skills</a>
+                    <a href="#projects" class="hover:text-cyber-pink transition">Projects</a>
+                    <a href="#certificates" class="hover:text-cyber-pink transition">Certificates</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black">
+        <div class="text-center">
+            <img src="/assets/Taha.png" alt="Taha Daneshmand" class="rounded-full w-48 h-48 mx-auto mb-8 border-4 border-cyber-blue">
+            <h1 class="text-5xl font-bold mb-4 cyber-glitch">Taha Daneshmand</h1>
+            <p class="text-2xl mb-8">Network | CyberSecurity</p>
+            <a href="/assets/resume.pdf" class="bg-cyber-blue text-black px-6 py-3 rounded-full hover:bg-cyber-pink transition">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-cyber-pink">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <i class="fab fa-html5 text-5xl mb-4 text-cyber-blue"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-css3-alt text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-js text-5xl mb-4 text-cyber-blue"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-php text-5xl mb-4 text-cyber-blue"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-terminal text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Bash</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab text-5xl mb-4 text-cyber-blue">
+                        <img height="42" width="42" src="https://cdn.simpleicons.org/cplusplus/08f4fc" />
+                    </i>
+                    <p>C++</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab text-5xl mb-4 text-cyber-blue">
+                        <img height="42" width="42" src="https://cdn.simpleicons.org/godotengine/08f4fc" />
+                    </i>
+                    <p>Godot</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-python text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Python</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-golang text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Go</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-gem text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Ruby</p>
+                </div>                         
+                <div class="text-center">
+                    <i class="fas fa-network-wired text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Network+</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-linux text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Linux+</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-tools text-5xl mb-4 text-cyber-blue"></i>
+                    <p>A+</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab text-5xl mb-4 text-cyber-blue">
+                        <img height="42" width="42" src="https://cdn.simpleicons.org/django/08f4fc" />
+                    </i>
+                    <p>Django</p>
+                </div>            
+                <div class="text-center">
+                    <i class="fas fa-shield-alt text-5xl mb-4 text-cyber-blue"></i>
+                    <p>Security+</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-server text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CCNA</p>
+                </div>            
+                <div class="text-center icon-container">
+                    <i class="fas fa-server text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CCNA</p>
+                </div>
+                <div class="text-center icon-container">
+                    <i class="fas text-5xl mb-4 text-cyber-blue">
+                        <img height="42" width="42" src="https://cdn.simpleicons.org/mikrotik/08f4fc" />
+                    </i>
+                    <p>Mikrotik</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-server text-5xl mb-4 text-cyber-blue"></i>
+                    <p>MCSA</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-server text-5xl mb-4 text-cyber-blue"></i>
+                    <p>MCSE</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lock text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CEH</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lock text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CISSP</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lock text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CompTIA PenTest+</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lock text-5xl mb-4 text-cyber-blue"></i>
+                    <p>CompTIA CySA+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-cyber-blue">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/assets/wikipedia_tool.jpg" alt="wikipedia_tool library" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">wikipedia_tool library</h3>
+                        <p class="mb-4">Wikipedia API Wrapper for Python</p>
+                        <a href="https://github.com/spy404/wikipedia_tool" class="text-cyber-pink hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-cyber-pink">Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Web Scraping And API Fundamentals in Python</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Introduction to R Programming</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Git and Github</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">ChatGPT for Data Sciense</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Data Analysis with ChatGPT</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Intro to ChatGPT and Generative AI</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+                <div class="bg-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Python Programmer Bootcamp</h3>
+                    <p class="mb-2">Issuer: 365datasience.com</p>
+                    <p>Year: 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-black">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="mailto:tahadaneshmand.2009@proton.me" class="text-gray-400 hover:text-cyber-blue transition"><i class="fab fa-solid fa-at text-2xl"></i></a>
+                <a href="https://github.com/taha-daneshmand" class="text-gray-400 hover:text-cyber-blue transition"><i class="fab fa-github text-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/taha-daneshmand" class="text-gray-400 hover:text-cyber-blue transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="https://t.me/taha0daneshmand" class="text-gray-400 hover:text-cyber-blue transition"><i class="fab fa-telegram text-2xl"></i></a>
+            </div>
+            <p>&copy; 2024 Taha Daneshmand. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
